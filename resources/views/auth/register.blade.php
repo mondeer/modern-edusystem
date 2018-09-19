@@ -22,6 +22,7 @@
                 <small>Sign up with credentials</small>
               </div>
               <form role="form" method="POST" action="{{ route('register') }}">
+                {{ csrf_field() }}
                 <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">

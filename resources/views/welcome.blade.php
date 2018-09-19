@@ -215,31 +215,39 @@
                     <div class="text-center text-muted mb-4">
                       <small>Or sign in with credentials</small>
                     </div>
-                    <form role="form">
-                      <div class="form-group mb-3">
+                    <form role="form" method="POST" action="{{ route('login') }}">
+                      {{ csrf_field() }}
+                      <div class="form-group mb-3 {{ $errors->has('email') ? ' has-error' : '' }}">
                         <div class="input-group input-group-alternative">
                           <div class="input-group-prepend">
                             <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Email" type="email">
+                          <input class="form-control" name="email" placeholder="Email" type="email">
                         </div>
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
                       </div>
-                      <div class="form-group">
+                      <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
                         <div class="input-group input-group-alternative">
                           <div class="input-group-prepend">
                             <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Password" type="password">
+                          <input class="form-control" name="password" placeholder="Password" type="password">
                         </div>
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
                       </div>
                       <div class="custom-control custom-control-alternative custom-checkbox">
-                        <input class="custom-control-input" id=" customCheckLogin2" type="checkbox">
-                        <label class="custom-control-label" for=" customCheckLogin2">
-                          <span>Remember me</span>
-                        </label>
+                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                       </div>
                       <div class="text-center">
-                        <button type="button" class="btn btn-primary my-4">Sign in</button>
+                        <button type="submit" class="btn btn-primary my-4">Sign in</button>
                       </div>
                     </form>
                   </div>

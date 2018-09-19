@@ -4,6 +4,10 @@ Route::get('/', function(){
   return view('welcome');
 });
 
+Route::get('/edusystem/admin', function(){
+  return view('admin.dashboard');
+});
+
 Route::post('/hire/imond', 'HireCtrl@hire');
 
 Route::get('/newblog', 'BlogCtrl@create');
