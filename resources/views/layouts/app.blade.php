@@ -11,11 +11,9 @@
     <meta name="description" content="150 words">
     <meta name="author" content="Mondia Kering">
     <meta name="url" content="http://www.imond.co.ke">
-    <meta name="copyright" content="iMond Solutions">
-    <meta name="robots" content="index,follow">
-
-
-    <title>iMond || DevBlog</title>
+    <title>Modern Education Portal</title>
+    <meta name="description" content="Education solutions, imond.co.ke">
+    <meta name="keywords" content="Education system for Kenyan education system">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">

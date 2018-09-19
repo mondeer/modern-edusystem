@@ -1,225 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Modern Education Portal</title>
+  <meta name="description" content="Education solutions, imond.co.ke">
+  <meta name="keywords" content="Education system for Kenyan education system">
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href="../assets/css/argon.css?v=1.0.0" rel="stylesheet">
+  <!-- Docs CSS -->
+  <link type="text/css" href="../assets/css/docs.min.css" rel="stylesheet">
+</head>
 
-    <!-- Meta Tag -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- SEO -->
-    <meta name="description" content="150 words">
-    <meta name="author" content="Mondia Kering">
-    <meta name="url" content="http://www.imond.co.ke">
-    <meta name="copyright" content="iMond Solutions">
-    <meta name="robots" content="index,follow">
-
-
-    <title>iMond || DevBlog</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
-
-    <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/plugin.css')}}">
-
-    <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/style.css')}}">
-
-    <!-- Google Web Fonts  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
-    <link rel="icon" href="{{url('/imond/img/imond.png')}}">
-    <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
-
-    {{-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>
-    tinymce.init({
-          selector: 'textarea',
-          height: 500,
-          setup: function (editor) {
-              editor.on('init change', function () {
-                  editor.save();
-              });
-          },
-          plugins: [
-              "advlist autolink lists link image charmap print preview anchor",
-              "searchreplace visualblocks code fullscreen",
-              "insertdatetime media table contextmenu paste imagetools"
-          ],
-          toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-          content_css: [
-              '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-              '//www.tinymce.com/css/codepen.min.css'
-          ],
-          image_title: true,
-          automatic_uploads: true,
-          images_upload_url: '/upload',
-          file_picker_types: 'image',
-          file_picker_callback: function(cb, value, meta) {
-              var input = document.createElement('input');
-              input.setAttribute('type', 'file');
-              input.setAttribute('accept', 'image/*');
-              input.onchange = function() {
-                  var file = this.files[0];
-
-                  var reader = new FileReader();
-                  reader.readAsDataURL(file);
-                  reader.onload = function () {
-                      var id = 'blobid' + (new Date()).getTime();
-                      var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-                      var base64 = reader.result.split(',')[1];
-                      var blobInfo = blobCache.create(id, file, base64);
-                      blobCache.add(blobInfo);
-                      cb(blobInfo.blobUri(), { title: file.name });
-                  };
-              };
-              input.click();
-          }
-      });
-    </script> --}}
-  </head>
-
- <body>
-	 <!-- Preloader Start -->
-     <div class="preloader">
-	   <div class="rounder"></div>
-      </div>
-      <!-- Preloader End -->
-
-    <div id="main">
-        <div class="container">
+<body>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="/">
+          <img src="../assets/img/brand/white.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
             <div class="row">
-              <form method="get" action="/wiki">
-                      <div class="subscribe-form margin-top-20">
-                          <input id="mc-email" name="keyword" type="text" placeholder="Query Wikipedia" class="text-input">
-                          <button class="submit-btn" type="submit">Search</button>
-                      </div>
-                 <p>Search Wikipedia</p>
-                 <label for="mc-email" class="mc-label"></label>
-               </form>
-                 <!-- About Me (Left Sidebar) Start -->
-                 {{-- <div class="col-md-3">
-                   <div class="about-fixed">
-
-                     <div class="my-pic">
-                        <img src="/imond/img/biorec.png" alt="">
-                        <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
-                         <div id="menu" class="collapse">
-                           <ul class="menu-link">
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
-                            </ul>
-                         </div>
-                        </div>
-
-                      <div class="my-detail">
-
-                        <div class="white-spacing">
-                            <h1>Laban Kering</h1>
-                            <span>In love with Java, Laravel, <br> Firebase, HTML5.  </span>
-                        </div>
-
-                       <ul class="social-icon">
-                         <li><a href="http://www.facebook.com/bassaniok" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="http://www.twitter.com/mondeer" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <!-- <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li> -->
-                         <li><a href="http://www.github.com/mondeer" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
-
-                    </div>
-                  </div>
-                </div> --}}
-                <!-- About Me (Left Sidebar) End -->
-
-                 <!-- Blog Post (Right Sidebar) Start -->
-                 <div class="col-md-12">
-                    <div class="col-md-12 page-body">
-
-                      @yield('content')
-
-                        <!-- Subscribe Form Start -->
-                        <div class="col-md-8 col-md-offset-2">
-                           <form id="mc-form" method="post" action="">
-
-              						         <div class="subscribe-form margin-top-20">
-              							           <input id="mc-email" type="email" placeholder="Email Address" class="text-input">
-              							           <button class="submit-btn" type="submit">Submit</button>
-              								     </div>
-                              <p>Subscribe to my weekly Thoughts</p>
-              								<label for="mc-email" class="mc-label"></label>
-              							  </form>
-
-                           </div>
-                           <!-- Subscribe Form End -->
-
-                         </div>
-
-                       <!-- Footer Start -->
-                       <div class="col-md-12 page-body margin-top-50 footer">
-                          <footer>
-                          <ul class="menu-link">
-                               <li><a href="/">Home</a></li>
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">My Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
-                            </ul>
-
-                          <p>© Copyright 2018 iMond Solutions. MIT license</p>
-
-						  <!-- imond Credit Start -->
-                          <div class="imond-credit">Shared by <i class="fa fa-love"></i><a href="https://imond.co.ke">Mondia Kering</a></div>
-                          <!-- imond Credit End -->
-                         </footer>
-                       </div>
-                       <!-- Footer End -->
-
-
-                  </div>
-                  <!-- Blog Post (Right Sidebar) End -->
-
+              <div class="col-6 collapse-brand">
+                <a href="/">
+                  <img src="../assets/img/brand/blue.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
             </div>
-         </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-ui-04 d-lg-none"></i>
+                <span class="nav-link-inner--text">Components</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl">
+                <div class="dropdown-menu-inner">
+                  <a href="/wiki" class="media d-flex align-items-center">
+                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                      <i class="ni ni-spaceship"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-primary mb-md-1">wikiGrab</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Search wikimedia directly from within Modern Edusystem, and enjoy the comfort of not navigating away from the tab.</p>
+                    </div>
+                  </a>
+                  <a href="/" class="media d-flex align-items-center">
+                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                      <i class="ni ni-ui-04"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h5 class="heading text-warning mb-md-1">Online Material</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Vast materials on past papers uploaded and managed via google docs, then viewed comfortably within Modern Edusystem.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Examples</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="/login" class="dropdown-item">Login</a>
+                <a href="/register" class="dropdown-item">Register</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="/wiki" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+                <i class="fa fa-twitter-square"></i>
+                <span class="nav-link-inner--text d-lg-none">wikiGrab</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="/forums" target="_blank" data-toggle="tooltip" title="Star us on Github">
+                <i class="fa fa-github"></i>
+                <span class="nav-link-inner--text d-lg-none">Forum</span>
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a href="/login" target="_blank" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class="fa fa-cloud-download mr-2"></i>
+                </span>
+                <span class="nav-link-inner--text">Login</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <main>
+    @yield('content')
+  </main>
+  <footer class="footer">
+    <div class="container">
 
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2018
+            <a href="#" target="_blank">Modern Edusystem</a>.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="#" class="nav-link" target="_blank">Edusystem</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" target="_blank">MIT License</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.0.0"></script>
+</body>
 
-
-    <!-- Back to Top Start -->
-    <a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
-    <!-- Back to Top End -->
-
-    <script src="/blog/js/medium-editor.js"></script>
-
-    <script>
-      var editor = new MediumEditor('.editable', {
-          placeholder: {
-              /* This example includes the default options for placeholder,
-                 if nothing is passed this is what it used */
-              text: 'Type Blog text',
-              hideOnClick: true
-          },
-          paste: {
-              /* This example includes the default options for paste,
-                 if nothing is passed this is what it used */
-              forcePlainText: false,
-              cleanPastedHTML: true,
-              cleanReplacements: [],
-              cleanAttrs: ['class', 'style', 'dir'],
-              cleanTags: ['meta'],
-              unwrapTags: []
-          }
-      });
-  </script>
-
-    <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="{{ asset('blog/js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('blog/js/plugin.js')}}"></script>
-
-    <!-- Main Javascript File  -->
-    <script type="text/javascript" src="{{ asset('blog/js/scripts.js')}}"></script>
-
-
-   </body>
- </html>
+</html>

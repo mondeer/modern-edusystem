@@ -4,11 +4,6 @@ use Illuminate\Database\Seeder;
 
 class ChatterTableSeeder extends Seeder
 {
-    /**
-     * Auto generated seed file.
-     *
-     * @return void
-     */
     public function run()
     {
 
@@ -154,8 +149,8 @@ class ChatterTableSeeder extends Seeder
                 'sticky'              => 0,
                 'views'               => 0,
                 'answered'            => 0,
-                'created_at'          => '2016-08-18 14:42:29',
-                'updated_at'          => '2016-08-18 14:42:29',
+                'created_at'          => '2018-08-18 14:42:29',
+                'updated_at'          => '2018-08-18 14:42:29',
                 'slug'                => 'leaving-feedback',
                 'color'               => '#8e1869',
             ],
