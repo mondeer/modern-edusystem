@@ -151,14 +151,14 @@
             <div class="row align-items-center justify-content-around stars-and-coded">
               <div class="col-sm-4">
                 <span class="text-white alpha-7 ml-3">Star us on</span>
-                <a href="https://github.com/creativetimofficial/argon-design-system" target="_blank" title="Support us on Github">
+                <a href="https://github.com/mondeer/modern-edusystem" target="_blank" title="Support us on Github">
                   <img src="./assets/img/brand/github-white-slim.png" style="height: 22px; margin-top: -3px">
                 </a>
               </div>
               <div class="col-sm-4 mt-4 mt-sm-0 text-right">
                 <span class="text-white alpha-7">Coded by</span>
-                <a href="https://www.creative-tim.com" target="_blank" title="Creative Tim - Premium Bootstrap Themes and Templates">
-                  <img src="./assets/img/brand/creativetim-white-slim.png" class="ml-3" style="height: 30px;">
+                <a href="#" target="_blank" title="Modern Edusystem Developers">
+                  <img src="./assets/img/brand/white.png" class="ml-3" style="height: 30px;">
                 </a>
               </div>
             </div>
@@ -277,10 +277,10 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="img-fluid" src="./assets/img/theme/img-1-1200x1000.jpg" alt="First slide">
+                    <img class="img-fluid" src="./assets/img/slide.png" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="img-fluid" src="./assets/img/theme/img-2-1200x1000.jpg" alt="Second slide">
+                    <img class="img-fluid" src="./assets/img/slide1.png" alt="Second slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel_example" role="button" data-slide="prev">
@@ -301,7 +301,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="display-3">Nucleo Icons</h2>
+            <h2 class="display-3">Infinity Branches</h2>
             <p class="lead">
               This platform is a host all branches of education
             </p>
@@ -334,91 +334,8 @@
         </div>
       </div>
     </section>
-    <section class="section section-lg section-shaped overflow-hidden my-0">
-      <div class="shape shape-style-1 shape-default shape-skew">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="container shape-container py-0 pb-5">
-
-      </div>
-    </section>
-    <section class="section section-lg">
-      <div class="container">
-        <div class="row row-grid justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="display-3">Do you love this awesome
-              <span class="text-success">Design System for Bootstrap 4?</span>
-            </h2>
-            <p class="lead">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in HTML. Start a new project or give an old Bootstrap project a new look!</p>
-            <div class="btn-wrapper">
-              <a href="https://www.creative-tim.com/product/argon-design-system" class="btn btn-primary mb-3 mb-sm-0">Download HTML</a>
-            </div>
-            <div class="text-center">
-              <h4 class="display-4 mb-5 mt-5">Available on these technologies</h4>
-              <div class="row justify-content-center">
-                <div class="col-lg-2 col-4">
-                  <a href="https://getbootstrap.com/" target="_blank" data-toggle="tooltip" data-original-title="Bootstrap 4 - Most popular front-end component library">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                  <a href="https://www.sketchapp.com/" target="_blank" data-toggle="tooltip" data-original-title="[Coming Soon] Sketch - Digital design toolkit">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg" class="img-fluid opacity-5">
-                  </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                  <a href="https://www.adobe.com/products/photoshop.html" data-toggle="tooltip" data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg" class="img-fluid  opacity-5">
-                  </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                  <a href="https://vuejs.org/" target="_blank" data-toggle="tooltip" data-original-title="[Coming Soon] Vue.js - The progressive javascript framework">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg" class="img-fluid opacity-5">
-                  </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                  <a href="https://angularjs.org/" target="_blank" data-toggle="tooltip" data-original-title="[Coming Soon] Angular - One framework. Mobile &amp; desktop">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg" class="img-fluid opacity-5">
-                  </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                  <a href="https://reactjs.org/" target="_blank" data-toggle="tooltip" data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg" class="img-fluid opacity-5">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <footer class="footer has-cards">
-    <div class="container container-lg">
-      <div class="row">
-        <div class="col-md-6 mb-5 mb-md-0">
-          <div class="card card-lift--hover shadow border-0">
-            <a href="./examples/landing.html" title="Landing Page">
-              <img src="./assets/img/theme/landing.jpg" class="card-img">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 mb-5 mb-lg-0">
-          <div class="card card-lift--hover shadow border-0">
-            <a href="./examples/profile.html" title="Profile Page">
-              <img src="./assets/img/theme/profile.jpg" class="card-img">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
       <div class="row row-grid align-items-center my-md">
         <div class="col-lg-6">
@@ -445,22 +362,22 @@
         <div class="col-md-6">
           <div class="copyright">
             &copy; 2018
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            <a href="#" target="_blank">Modern Edusystem Portal</a>.
           </div>
         </div>
         <div class="col-md-6">
           <ul class="nav nav-footer justify-content-end">
             <li class="nav-item">
-              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Components</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">WikiGrab</a>
             </li>
             <li class="nav-item">
-              <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+              <a href="" class="nav-link" target="_blank">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+              <a href="" class="nav-link" target="_blank">MIT License</a>
             </li>
           </ul>
         </div>
