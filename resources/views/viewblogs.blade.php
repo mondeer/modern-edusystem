@@ -1,12 +1,12 @@
-@extends('blog.index')
+@extends('layouts.imondmain')
 
 @section('content')
 <div class="row">
 
 
       <div class="sub-title">
-        <h2>iMond Solutions</h2>
-          <a href="contact.html"><i class="icon-envelope"></i></a>
+        <h2>Modern Edusystem</h2>
+          <a href="/"><i class="icon-envelope"></i></a>
        </div>
 
 

@@ -14,6 +14,8 @@ Route::get('/newblog', 'BlogCtrl@create');
 
 Route::post('/newblog', 'BlogCtrl@postCreate');
 
+Route::get('/edusystem/components', 'BlogCtrl@show');
+
 Route::get('/viewblog/{id}', array('as'=>'viewblog', 'uses'=>'BlogCtrl@showblog'));
 
 Auth::routes();

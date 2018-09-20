@@ -158,7 +158,7 @@
 </div>
 
   <script>
-     CKEDITOR.replace( 'editor1' );
+     CKEDITOR.replace( 'content' );
  </script>
 
     <!-- Bootstrap core JavaScript

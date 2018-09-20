@@ -3,13 +3,13 @@
 namespace imond\Http\Controllers;
 
 use Illuminate\Http\Request;
-use MediaWiki;
+use Wikipedia;
 
 class WikiCtrl extends Controller
 {
     public function wikiGrab(Request $request) {
       $keyword = $request->input('keyword');
-      $page = (new MediaWiki('https://wikinews.org/w/api.php'))->preview($keyword);
+      $page = (new Wikipedia())->preview($keyword);
 
       return view('wiki')->with('page', $page);
     }

@@ -55,31 +55,22 @@
                    <div class="about-fixed">
 
                      <div class="my-pic">
-                        <img src="/imond/img/biorec.png" alt="">
+                        <img src="/assets/img/brand/black.png" alt="">
                         <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
                          <div id="menu" class="collapse">
                            <ul class="menu-link">
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
+                               <li><a href="/">Home</a></li>
+                               <li><a href="/wiki">WikiGrab</a></li>
+                               <li><a href="/login">Login</a></li>
                             </ul>
                          </div>
                         </div>
 
                       <div class="my-detail">
-
                         <div class="white-spacing">
-                            <h1>Laban Kering</h1>
-                            <span>In love with Java, Laravel, <br> Firebase, HTML5.  </span>
+                            <h1>Welcome User</h1>
+                            <span>All material freely available to you, for you</span>
                         </div>
-
-                       <ul class="social-icon">
-                         <li><a href="http://www.facebook.com/bassaniok" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="http://www.twitter.com/mondeer" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <!-- <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li> -->
-                         <li><a href="http://www.github.com/mondeer" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
-
                     </div>
                   </div>
                 </div>
@@ -88,6 +79,14 @@
                  <!-- Blog Post (Right Sidebar) Start -->
                  <div class="col-md-9">
                     <div class="col-md-12 page-body">
+                      <form method="get" action="/wiki">
+                        <div class="subscribe-form margin-top-20">
+                            <input id="mc-email" name="keyword" type="text" placeholder="Query Wikipedia" class="text-input">
+                            <button class="submit-btn" type="submit">Search</button>
+                        </div>
+                       <p>Search Wikipedia</p>
+                       <label for="mc-email" class="mc-label"></label>
+                      </form>
                     	@yield('content')
                         <!-- Subscribe Form Start -->
                         <div class="col-md-8 col-md-offset-2">
@@ -97,7 +96,7 @@
               							           <input id="mc-email" type="email" placeholder="Email Address" class="text-input">
               							           <button class="submit-btn" type="submit">Submit</button>
               								     </div>
-                              <p>Subscribe to my weekly Thoughts</p>
+                              <p>Subscribe to weekly Educational Posts</p>
               								<label for="mc-email" class="mc-label"></label>
               							  </form>
 
@@ -111,15 +110,14 @@
                           <footer>
                           <ul class="menu-link">
                                <li><a href="/">Home</a></li>
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">My Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
+                               <li><a href="/wiki">WikiGrab</a></li>
+                               <li><a href="/login">Login</a></li>
                             </ul>
 
-                          <p>© Copyright 2018 iMond Solutions. MIT license</p>
+                          <p>&copy; 2018 <a href="#" target="_blank">Modern Edusystem</a>.</p>
 
 						  <!-- imond Credit Start -->
-                          <div class="imond-credit">Shared by <i class="fa fa-love"></i><a href="https://imond.co.ke">Mondia Kering</a></div>
+                          <div class="imond-credit">Shared by <i class="fa fa-love"></i><a href="#">Modern Edusystem</a></div>
                           <!-- imond Credit End -->
                          </footer>
                        </div>
