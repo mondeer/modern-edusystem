@@ -9,7 +9,7 @@
     <form method="POST" action="/newblog">
       {{ csrf_field() }}
       <div class="form-group">
-        <label>Blog Title</label>
+        <label>Quiz Title</label>
         <input type="text" name="title" class="form-control" placeholder="Page Title" value="Title">
       </div>
       <div class="form-group">

@@ -8,6 +8,11 @@ Route::get('/edusystem/admin', function(){
   return view('admin.dashboard');
 });
 
+// students access free content
+Route::get('/enroll/new', function(){
+  return view('students.enroll');
+});
+
 Route::post('/hire/imond', 'HireCtrl@hire');
 
 Route::get('/newblog', 'BlogCtrl@create');
@@ -17,6 +22,17 @@ Route::post('/newblog', 'BlogCtrl@postCreate');
 Route::get('/edusystem/components', 'BlogCtrl@show');
 
 Route::get('/viewblog/{id}', array('as'=>'viewblog', 'uses'=>'BlogCtrl@showblog'));
+
+// topical Questions
+Route::get('/topical-quiz/create', 'GoogledocCtrl@create');
+
+Route::post('/topical-quiz/create', 'GoogledocCtrl@postCreate');
+
+Route::get('/topical-quiz/view', 'GoogledocCtrl@show');
+
+Route::get('/topical-quiz/{id}', array('as'=>'topical', 'uses'=>'GoogledocCtrl@showblog'));
+
+// end of topical questions
 
 Auth::routes();
 

@@ -82,9 +82,9 @@
               <a href="index.html" class="list-group-item active main-color-bg">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
               </a>
-              <a type="button" class="list-group-item" data-toggle="modal" data-target="#addPage"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Add Page <span class="badge">12</span></a>
-              <a href="posts.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge">33</span></a>
-              <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
+              <a href="/topical-quiz/create" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Topical Questions <span class="badge">33</span></a>
+              <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge">33</span></a>
+              <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
             </div>
 
             <div class="well">
@@ -120,45 +120,37 @@
     <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <form>
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add Page</h4>
-      </div>
-      <div class="modal-body">
+      <form method="POST" action="/newblog">
+        {{ csrf_field() }}
         <div class="form-group">
-          <label>Page Title</label>
-          <input type="text" class="form-control" placeholder="Page Title">
+          <label>Doc Title</label>
+          <input type="text" name="title" class="form-control" placeholder="Document Title" value="{{old('title')}}">
         </div>
         <div class="form-group">
-          <label>Page Body</label>
-          <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+          <label>Doc Subject</label>
+          <input type="text" name="subject" class="form-control" placeholder="Document Subject" value="{{old('subject')}}">
+        </div>
+        <div class="form-group">
+          <label>Doc Class</label>
+          <input type="text" name="class" class="form-control" placeholder="Document Class" value="{{old('class')}}">
+        </div>
+        <div class="form-group">
+          <label class="control-label">Document</label>
+          <textarea id="message" rows="13" placeholder="{{Auth::user()->name}}, your content goes here, at the bottom right of this canvas, expand" name="document"></textarea>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox"> Published
+            <input type="checkbox" name="published" checked> Published
           </label>
         </div>
-        <div class="form-group">
-          <label>Meta Tags</label>
-          <input type="text" class="form-control" placeholder="Add Some Tags...">
-        </div>
-        <div class="form-group">
-          <label>Meta Description</label>
-          <input type="text" class="form-control" placeholder="Add Meta Description...">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-      </div>
-    </form>
+        <input type="submit" class="btn btn-default" value="Submit">
+      </form>
     </div>
   </div>
 </div>
 
   <script>
-     CKEDITOR.replace( 'content' );
+     CKEDITOR.replace( 'content');
  </script>
 
     <!-- Bootstrap core JavaScript
