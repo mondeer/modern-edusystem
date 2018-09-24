@@ -107,7 +107,7 @@
 
                        <!-- Footer Start -->
                        <div class="col-md-12 page-body margin-top-50 footer">
-                          <footer>
+                        <footer>
                           <ul class="menu-link">
                                <li><a href="/">Home</a></li>
                                <li><a href="/wiki">WikiGrab</a></li>

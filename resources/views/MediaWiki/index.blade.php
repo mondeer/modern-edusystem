@@ -31,52 +31,6 @@
     <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
 
-    {{-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>
-    tinymce.init({
-          selector: 'textarea',
-          height: 500,
-          setup: function (editor) {
-              editor.on('init change', function () {
-                  editor.save();
-              });
-          },
-          plugins: [
-              "advlist autolink lists link image charmap print preview anchor",
-              "searchreplace visualblocks code fullscreen",
-              "insertdatetime media table contextmenu paste imagetools"
-          ],
-          toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-          content_css: [
-              '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-              '//www.tinymce.com/css/codepen.min.css'
-          ],
-          image_title: true,
-          automatic_uploads: true,
-          images_upload_url: '/upload',
-          file_picker_types: 'image',
-          file_picker_callback: function(cb, value, meta) {
-              var input = document.createElement('input');
-              input.setAttribute('type', 'file');
-              input.setAttribute('accept', 'image/*');
-              input.onchange = function() {
-                  var file = this.files[0];
-
-                  var reader = new FileReader();
-                  reader.readAsDataURL(file);
-                  reader.onload = function () {
-                      var id = 'blobid' + (new Date()).getTime();
-                      var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-                      var base64 = reader.result.split(',')[1];
-                      var blobInfo = blobCache.create(id, file, base64);
-                      blobCache.add(blobInfo);
-                      cb(blobInfo.blobUri(), { title: file.name });
-                  };
-              };
-              input.click();
-          }
-      });
-    </script> --}}
   </head>
 
  <body>
@@ -105,42 +59,6 @@
                      </form>
 
                  </div>
-                 <!-- Subscribe Form End -->
-
-                 <!-- About Me (Left Sidebar) Start -->
-                 {{-- <div class="col-md-3">
-                   <div class="about-fixed">
-
-                     <div class="my-pic">
-                        <img src="/imond/img/biorec.png" alt="">
-                        <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
-                         <div id="menu" class="collapse">
-                           <ul class="menu-link">
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
-                            </ul>
-                         </div>
-                        </div>
-
-                      <div class="my-detail">
-
-                        <div class="white-spacing">
-                            <h1>Laban Kering</h1>
-                            <span>In love with Java, Laravel, <br> Firebase, HTML5.  </span>
-                        </div>
-
-                       <ul class="social-icon">
-                         <li><a href="http://www.facebook.com/bassaniok" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="http://www.twitter.com/mondeer" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <!-- <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li> -->
-                         <li><a href="http://www.github.com/mondeer" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
-
-                    </div>
-                  </div>
-                </div> --}}
-                <!-- About Me (Left Sidebar) End -->
 
                  <!-- Blog Post (Right Sidebar) Start -->
                  <div class="col-md-12">
@@ -152,20 +70,19 @@
 
                        <!-- Footer Start -->
                        <div class="col-md-12 page-body margin-top-50 footer">
-                          <footer>
-                          <ul class="menu-link">
-                               <li><a href="/">Home</a></li>
-                               <li><a href="/">My Blog</a></li>
-                               <li><a href="/imondwork">My Work</a></li>
-                               <li><a href="/imondcontact">Contact</a></li>
-                            </ul>
+                         <footer>
+                           <ul class="menu-link">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/wiki">WikiGrab</a></li>
+                                <li><a href="/login">Login</a></li>
+                             </ul>
 
-                          <p>© Copyright 2018 iMond Solutions. MIT license</p>
+                           <p>&copy; 2018 <a href="#" target="_blank">Modern Edusystem</a>.</p>
 
-						  <!-- imond Credit Start -->
-                          <div class="imond-credit">Shared by <i class="fa fa-love"></i><a href="https://imond.co.ke">Mondia Kering</a></div>
-                          <!-- imond Credit End -->
-                         </footer>
+               <!-- imond Credit Start -->
+                           <div class="imond-credit">Shared by <i class="fa fa-love"></i><a href="#">Modern Edusystem</a></div>
+                           <!-- imond Credit End -->
+                          </footer>
                        </div>
                        <!-- Footer End -->
 
