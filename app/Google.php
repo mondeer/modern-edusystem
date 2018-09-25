@@ -10,6 +10,6 @@ class Google extends Model
                             'subject',
                             'class',
                             'author',
-                            'content',
+                            'document',
                             'published'];
 }

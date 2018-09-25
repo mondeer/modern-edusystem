@@ -18,8 +18,8 @@ class GoogledocCtrl extends Controller
     $topical->title = $request->input('title');
     $topical->subject = $request->input('subject');
     $topical->class = $request->input('class');
-    $topical->content = $request->input('content');
-    $topical->published = $request->input('published');
+    $topical->document = $request->input('document');
+    $topical->published = true;
     $topical->author = $author;
     $topical->save();
 
@@ -30,7 +30,7 @@ class GoogledocCtrl extends Controller
   public function show() {
     $topicals = Google::all();
 
-    return view('googledocs.view')->with('topicals', $topicals);
+    return view('googledocs.topicals')->with('topicals', $topicals);
   }
 
   public function showblog($id) {

@@ -15,7 +15,7 @@ class CreateGooglesTable extends Migration
             $table->string('subject');
             $table->string('class');
             $table->string('author');
-            $table->text('content');
+            $table->text('document');
             $table->boolean('published');
             $table->timestamps();
         });

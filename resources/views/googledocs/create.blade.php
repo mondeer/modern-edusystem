@@ -22,7 +22,7 @@
       </div>
       <div class="form-group">
         <label class="control-label">Document</label>
-        <textarea id="message" name="content" rows="13" placeholder="{{Auth::user()->name}}, your content goes here, at the bottom right of this canvas, expand"></textarea>
+        <textarea id="message" name="document" rows="13" placeholder="{{Auth::user()->name}}, your content goes here, at the bottom right of this canvas, expand"></textarea>
       </div>
       <div class="checkbox">
         <label>

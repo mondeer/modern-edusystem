@@ -76,15 +76,17 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+            <li class="nav-item">
+              <a href="/forums" class="nav-link" href="#" role="button">
                 <i class="ni ni-collection d-lg-none"></i>
-                <span class="nav-link-inner--text">Examples</span>
+                <span class="nav-link-inner--text">Forum</span>
               </a>
-              <div class="dropdown-menu">
-                <a href="/login" class="dropdown-item">Login</a>
-                <a href="/register" class="dropdown-item">Register</a>
-              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/topical-quiz/view" class="nav-link" href="#" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Topical Questions</span>
+              </a>
             </li>
           </ul>
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">

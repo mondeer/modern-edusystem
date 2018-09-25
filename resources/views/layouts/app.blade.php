@@ -57,6 +57,8 @@
                       <!-- Left Side Of Navbar -->
                       <ul class="nav navbar-nav">
                           &nbsp;
+                          <li><a href="/home">Home</a></li>
+                          <li><a href="/topical-quiz/view">Topical Questions</a></li>
                       </ul>
 
                       <!-- Right Side Of Navbar -->

@@ -28,9 +28,8 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Dashboard</a></li>
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="users.html">Users</a></li>
+            <li><a href="/topical-quiz/create">Topical Quiz</a></li>
+            <li><a href="/newblog">Lecture Notes</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Welcome, {{Auth::user()->name}}</a></li>
@@ -54,7 +53,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h4><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+            <h4><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Modern Edusystem</small></h1>
           </div>
           <div class="col-md-4">
             <div class="create text-right">
@@ -79,11 +78,11 @@
         <div class="row">
           <div class="col-md-3">
             <div class="list-group">
-              <a href="index.html" class="list-group-item active main-color-bg">
+              <a href="#" class="list-group-item active main-color-bg">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
               </a>
               <a href="/topical-quiz/create" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Topical Questions <span class="badge">33</span></a>
-              <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge">33</span></a>
+              <a href="/newblog" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notes <span class="badge">33</span></a>
               <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
             </div>
 

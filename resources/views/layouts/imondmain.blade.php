@@ -51,7 +51,7 @@
             <div class="row">
 
                  <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
+                 {{-- <div class="col-md-3">
                    <div class="about-fixed">
 
                      <div class="my-pic">
@@ -73,12 +73,17 @@
                         </div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
                 <!-- About Me (Left Sidebar) End -->
 
                  <!-- Blog Post (Right Sidebar) Start -->
-                 <div class="col-md-9">
+                 <div class="col-md-12">
                     <div class="col-md-12 page-body">
+                      <ul class="menu-link">
+                          <li><a href="/"> <h2>Home</h2> </a></li>
+                          <li><a href="/wiki">WikiGrab</a></li>
+                          <li><a href="/login">Login</a></li>
+                       </ul>
                       <form method="get" action="/wiki">
                         <div class="subscribe-form margin-top-20">
                             <input id="mc-email" name="keyword" type="text" placeholder="Query Wikipedia" class="text-input">
